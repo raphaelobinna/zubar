@@ -1,0 +1,44 @@
+.card_section{
+    background: white;
+    width: 60rem;
+    padding: 1rem 4rem 0rem 4rem;
+    box-shadow: #e6e6e6 0px 0px 4px 0px;
+    border-radius: 5px;
+    margin: 0rem 0rem 5rem 0rem;
+}
+.top_bar{
+  
+    p{
+        margin: 0rem 0rem 0rem 4.8rem;
+        color: rgb(109, 109, 109);
+
+    }
+}
+
+.profile_name{
+    margin: 0.5rem 1rem;
+    position: absolute;
+}
+.top_bar_left{
+    position: absolute;
+    right: 3rem;
+    margin-top: -5rem;
+}
+.base_image{
+    width: 100%;
+    padding: 1rem;
+}
+.user_area{
+    span:last-child{
+        position: absolute;
+        right: 6rem;
+    }
+    span{
+        padding: 0rem 2rem;
+    }
+}
+
+.story_section{
+    font-size: 12px;
+    padding: 1rem;
+}

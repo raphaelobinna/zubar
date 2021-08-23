@@ -1,0 +1,72 @@
+// mobile screen
+
+
+@media only screen and (max-width: 600px) {
+
+    //login screen
+    .img_wrapper {
+        height: 19rem;
+        background-color: #4E0697;
+        position: inherit;
+        width: auto;
+    }
+
+    .input_wrapper {
+        margin-left: 0;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+
+    .logo {
+        width: 30%;
+        padding: 2rem;
+        position: absolute;
+    }
+
+    .login_img {
+        padding: 3rem 3rem;
+        width: 100%;
+    }
+
+    //home screen 
+
+    .card_section {
+      
+        width: 100%;
+        
+    }
+
+    .nav_wrapper{
+        display: none;
+    }
+
+    .display_wrapper {
+        margin-left: 0%; 
+        height: 100%;
+        position: absolute;
+        padding: 10rem 0rem;
+    }
+
+    .user_area span {
+        padding: 0.3rem 2rem;
+    }
+
+    //navigation
+
+    .right_section img {
+        padding: 0rem; 
+    }
+
+    .nav_bar input {
+        margin: 4rem -3rem -2rem -12rem;
+        padding: 0.7rem 1rem;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        box-shadow: #58159d 0px 0px 5px 0px;
+    }
+    .searcher{
+        display: none;
+    }
+  }
+
