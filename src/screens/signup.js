@@ -43,7 +43,7 @@ function Signup() {
             <input type="checkbox" /> {'    '}
                 <label>i agree to Zubar <b> Terms of services and Privacy Policy</b></label>
                 <br/>
-                <Link to="/home"> <button className="login_but"> Sign-Up </button></Link>
+                <Link to="/comic"> <button className="login_but"> Sign-Up </button></Link>
         </div>
       </div>
 

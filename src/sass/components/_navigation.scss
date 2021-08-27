@@ -39,11 +39,16 @@
     padding: 8rem 0rem;
     width: 20%;
     box-shadow: #d2d0d0 -6px 0px 28px 0px;
+    background-color: $primary-purple;
+    color: white;
 
 li{
     padding: 1rem 0rem;
     display: flex;
     margin: 2rem 0rem;
+    transition: 1s;
+    cursor: pointer;
+    color: white !important;
     // background: red;
 
     img{
@@ -51,8 +56,26 @@ li{
         margin: 0rem 1rem;
     }
 }
-li:first-child{
-    background-color:$primary-purple;
-    color:white;
+
+li:hover{
+    border: solid 1px white;
+    
 }
+
+li:focus {
+    background-color: yellow;
+  }
+
+a:active{
+    color: white !important;
+}
+
+}
+
+svg{
+   
+    margin: 0rem 1rem;
+    stroke: rgb(255, 255, 255);
+  
+
 }

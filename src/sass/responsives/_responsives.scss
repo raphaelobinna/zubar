@@ -68,5 +68,22 @@
     .searcher{
         display: none;
     }
+  ///user card 
+
+
+    .user_card_section{
+        display: flex;
+        overflow-x: scroll;
+        width: 32rem;
+        padding: 4rem 0rem;
+    }
+
+    .user_card_text{
+        padding: 5rem 1rem 0rem;
+    }
   }
+
+
+
+  
 

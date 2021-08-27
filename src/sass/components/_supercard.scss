@@ -27,7 +27,43 @@
 .base_image{
     width: 100%;
     padding: 1rem;
+    opacity: 1;
+//   display: block;
+//   width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+
+.user_area:hover .base_image {
+    opacity: 0.3;
+  }
+  
+  .user_area:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4E0697;
+    color: white;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    width: 9rem;
+    margin: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 .user_area{
     span:last-child{
         position: absolute;

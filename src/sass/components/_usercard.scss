@@ -1,0 +1,22 @@
+.user_card{
+    text-align: center;
+    background: $primary-purple;
+    padding: 2rem 5rem;
+    border-radius: 5px;
+    box-shadow: #797979 0px 0px 8px 0px;
+    margin: 1rem;
+    color: white;
+}
+.user_button{
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    border: none;
+    background: white;
+    margin-top: 2rem;
+}
+.user_card_section{
+    display: flex;
+    overflow-x: scroll;
+    width: 60rem;
+    
+}
