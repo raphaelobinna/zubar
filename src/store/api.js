@@ -1,12 +1,6 @@
 import axios from 'axios';
 
-let appURI = null
-
-    if (process.env.NODE_ENV === "production"){
-        appURI = process.env.REACT_APP_URL_PRODUCTION
-    } else {
-        appURI = process.env.REACT_APP_URL_DEVELOPMENT
-    }
+let appURI = process.env.REACT_APP_URL_DEVELOPMENT
 
 export const setToken = token => {
   if (token) {
