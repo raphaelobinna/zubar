@@ -1,7 +1,9 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { Provider } from 'react-redux';
 import "./sass/main.scss";
+import { store } from './store';
+
  const Home = lazy(() => import("./screens/home"));
 const Login = lazy(() => import("./screens/login"));
 const Signup = lazy(() => import("./screens/signup"));
@@ -16,6 +18,7 @@ const Music = lazy(() => import("./screens/music"));
 
 function App() {
   return (
+    <Provider store={store}>
     <Suspense fallback={<div>Loading...</div>}>
       <Router>
         <Switch>
@@ -32,6 +35,7 @@ function App() {
         </Switch>
       </Router>
     </Suspense>
+    </Provider>
 
 
   );
