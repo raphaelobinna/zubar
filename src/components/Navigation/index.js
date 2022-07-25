@@ -34,7 +34,7 @@ function Navigation() {
   
                  <span className="right_section">   
                     <img src="asset/img/icons/Messages Icon.svg" alt="comment icon"/>
-                    <img src="asset/img/icons/user.svg" alt="profile icon"/>
+                   <Link to="/profile" > <img src="asset/img/icons/user.svg" alt="profile icon"/> </Link> 
                     {/*  */}
                 </span>
         </div>
@@ -49,7 +49,13 @@ function Navigation() {
               <li>
                  <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 26.667V13.333M24 26.667V5.333M8 26.667v-5.334" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 <span>  Rankings</span></li>
-              <li>  <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 20a4 4 0 100-8 4 4 0 000 8z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.866 20a2.201 2.201 0 00.44 2.427l.08.08a2.665 2.665 0 010 3.773 2.664 2.664 0 01-3.773 0l-.08-.08a2.2 2.2 0 00-2.427-.44 2.201 2.201 0 00-1.333 2.013V28a2.666 2.666 0 11-5.333 0v-.12A2.2 2.2 0 0012 25.867a2.2 2.2 0 00-2.427.44l-.08.08a2.667 2.667 0 11-3.773-3.774l.08-.08a2.2 2.2 0 00.44-2.426 2.2 2.2 0 00-2.014-1.334H4a2.667 2.667 0 110-5.333h.12A2.2 2.2 0 006.133 12a2.2 2.2 0 00-.44-2.427l-.08-.08A2.667 2.667 0 017.5 4.938a2.667 2.667 0 011.886.782l.08.08a2.2 2.2 0 002.427.44H12a2.2 2.2 0 001.333-2.013V4a2.667 2.667 0 015.333 0v.12A2.2 2.2 0 0020 6.133a2.2 2.2 0 002.426-.44l.08-.08a2.667 2.667 0 113.774 3.774l-.08.08a2.2 2.2 0 00-.44 2.426V12a2.2 2.2 0 002.013 1.333H28a2.667 2.667 0 110 5.334h-.12A2.2 2.2 0 0025.866 20v0z" stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <span>Setting</span></li>
+
+                <Link to="/settings">
+              <li> 
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 20a4 4 0 100-8 4 4 0 000 8z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.866 20a2.201 2.201 0 00.44 2.427l.08.08a2.665 2.665 0 010 3.773 2.664 2.664 0 01-3.773 0l-.08-.08a2.2 2.2 0 00-2.427-.44 2.201 2.201 0 00-1.333 2.013V28a2.666 2.666 0 11-5.333 0v-.12A2.2 2.2 0 0012 25.867a2.2 2.2 0 00-2.427.44l-.08.08a2.667 2.667 0 11-3.773-3.774l.08-.08a2.2 2.2 0 00.44-2.426 2.2 2.2 0 00-2.014-1.334H4a2.667 2.667 0 110-5.333h.12A2.2 2.2 0 006.133 12a2.2 2.2 0 00-.44-2.427l-.08-.08A2.667 2.667 0 017.5 4.938a2.667 2.667 0 011.886.782l.08.08a2.2 2.2 0 002.427.44H12a2.2 2.2 0 001.333-2.013V4a2.667 2.667 0 015.333 0v.12A2.2 2.2 0 0020 6.133a2.2 2.2 0 002.426-.44l.08-.08a2.667 2.667 0 113.774 3.774l-.08.08a2.2 2.2 0 00-.44 2.426V12a2.2 2.2 0 002.013 1.333H28a2.667 2.667 0 110 5.334h-.12A2.2 2.2 0 0025.866 20v0z" stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 
+                <span>Setting</span>
+                </li>
+                </Link>
 
 
 

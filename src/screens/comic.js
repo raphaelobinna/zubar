@@ -11,20 +11,20 @@ import MobileToogle from "../components/MobileToogle";
 
 
 
-function Comic(){
+function Comic() {
 
-    return(
+    return (
         <React.Fragment>
 
-            <Navigation/>
+            <Navigation />
 
             <div className="display_wrapper">
 
-                    <Usercard/><br/>
-                    <ComicCard/>
-        <MobileToogle/>
+                <Usercard /><br />
+                <ComicCard />
+                <MobileToogle />
 
-              
+
 
 
             </div>
@@ -33,7 +33,7 @@ function Comic(){
     )
 
 
-     
+
 }
 
 export default Comic;

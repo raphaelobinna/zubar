@@ -1,11 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Seo from "../shared/Seo";
 // import {Col, Container, Row} from "react-bootstrap"
 // import Navigation from "../shared/Navigaion";
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { registerAction } from "../store/actions/auth";
+import swal from "sweetalert";
+import { useHistory } from "react-router-dom";
 
 
 function Signup() {
+  const dispatch = useDispatch()
+
+  const history = useHistory();
+  const auth = useSelector(state => state.persistedStore);
+
+  const [input, setInput] = useState({
+    email: "", full_name:"",
+    username:"", content_creator:false
+  })
+
+  const [pass, setPass] = useState({
+    password:"", confirmPassword:""
+  })
+
+  useEffect(() => {
+    // dispatch(storeAddress())
+    if (auth && auth.isAuthenticated) {
+      history.push("/home");
+    }
+  });
+
+ function onSubmit() {
+   if(pass.password === pass.confirmPassword) {
+      dispatch(registerAction({...input, password:pass.password}))
+   } else {
+    swal({
+      title: "Registration Failed!",
+      text: "password and confirm password are not the same",
+      icon: "warning",
+      dangerMode: true
+    });
+   }
+ }
+
+
   return (
     <React.Fragment>
       <Seo page="Login">
@@ -24,26 +63,28 @@ function Signup() {
 
 
             <form className="input_signup_section">
-                <input placeholder="Fullname"/>
-                <input placeholder="Other names"/>
+                <input value={input.full_name} onChange={e => setInput({...input, full_name: e.target.value})} placeholder="Fullname"/>
+                <input value={input.username} onChange={e => setInput({...input, username: e.target.value})} placeholder="username"/>
             </form>
 
             <form className="input_signup_section">
-                <input placeholder="Phone-number" />
-                <input placeholder="Email"/>
+                <input value={input.email} onChange={e => setInput({...input, email: e.target.value.toLowerCase().split(' ').join('')})} placeholder="Email"/>
             </form>
 
 
             <form className="input_signup_section">
-            <input type="password" placeholder="Password"/>
-
-                <input type="password" placeholder="confirm password"/>
+            <input value={pass.password} onChange={e => setPass({...pass, password: e.target.value.split(' ').join('')})} type="password" placeholder="Password"/>
+                <input value={pass.confirmPassword} onChange={e => setPass({...pass, confirmPassword: e.target.value.split(' ').join('')})} type="password" placeholder="confirm password"/>
             </form>
+
+            <input type="checkbox" value={input.content_creator} onChange={() => setInput({...input, content_creator: !input.content_creator})}/> {'    '}
+                <label>Are you a content creator ?</label>
+                <br/>
 
             <input type="checkbox" /> {'    '}
                 <label>i agree to Zubar <b> Terms of services and Privacy Policy</b></label>
                 <br/>
-                <Link to="/comic"> <button className="login_but"> Sign-Up </button></Link>
+                <button onClick={onSubmit} className="login_but"> Sign-Up </button>
         </div>
       </div>
 
